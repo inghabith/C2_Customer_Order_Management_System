@@ -1,4 +1,3 @@
-
 def register_client(accumulated_tuple):
     keep_registering = "yes"
     
@@ -7,7 +6,7 @@ def register_client(accumulated_tuple):
         print("customer registration".center(50, "="))
         print("-" * 50)
 
-        user_id = input("Enter your ID: ")
+        user_id = int(input("Enter your ID: "))
         name = input("type your name: ")
         email = input("enter your email: ")
 
