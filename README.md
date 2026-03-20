@@ -1,23 +1,22 @@
 # 🛒 Pricesmart Riwi — Customer Order Management System
 ## 📖 Description
-A modular command-line application built in Python that automates the registration and processing of customer orders for a distribution company.
-The system allows registering customers, products and orders, calculating daily revenue, and generating a consolidated final report — all from the terminal, without
+A modular command-line application built in Python that automates the registration and processing of customer orders for a company.
+The system allows registering customers, products and orders, calculating daily revenue, and generating a consolidated final report all from the terminal, without
 external dependencies.
 
-## ⚙️ Process & Analysis
-The system follows a sequential flow during each session:
-
-1. The user registers customers and products into the system.
-2. Orders are created by linking a customer, a product, and a quantity — the subtotal is calculated automatically.
-3. At any point, the user can consult all registered orders and the total revenue.
-4. At the end of the session, a final report is generated showing orders grouped by customer and a summary of products sold.
-
-Each feature is handled by an independent module, keeping responsibilities separated and the code reusable.
+## ⚙️ System Architecture
+The application follows a modular architecture where each feature lives in its own independent file. The main.py file acts as the entry point and orchestrator: it imports all feature functions, maintains the shared state (tuples for customers, products, and orders), and routes user input from the main menu to the correct module
 
 ## 🔁 Flow Diagram
 <img width="3920" height="3240" alt="Diagrama de flujo semana 2" src="https://github.com/user-attachments/assets/5eca3017-ebf3-4af5-b1a9-3e552d754f31" />
 
-## 💡 How It Works
+## How to run the program
+1.	Clone or download the repository so all .py files are in the same folder.
+2.	Open the main.py file and run it
+3.	Follow the on-screen menu to register customers, products, and orders.
+4.	After each option the program asks whether to return to the main menu. Type yes to continue or no to exit.
+
+## 💡 Data structure and module descriptions
 The code is based on the use of dictionaries and tuples that collect and store the information the user enters as the program requests it.
 The program is divided into six independent modules, each responsible for a specific part of the system:
 
